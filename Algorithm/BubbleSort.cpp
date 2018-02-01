@@ -15,8 +15,10 @@
 3. 최종적으로 (요소의 총 개수 - 1)만큼 1,2를 반복한다
 */
 
-inline bool Ascend(int x, int y) { return (x > y) ? true : false; }		//오름차순
-inline bool Descend(int x, int y) { return (x < y) ? true : false; }	//내림차순
+//오름차순
+inline bool Ascend(int x, int y) { return (x > y) ? true : false; }
+//내림차순
+inline bool Descend(int x, int y) { return (x < y) ? true : false; }
 
 void BubbleSort(int* arr, int size, bool (*Func) (int,int))
 {
