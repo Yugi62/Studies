@@ -32,7 +32,7 @@ int main()
 		//각각 초기화
 		int array1[3];
 		array1[0] = 0;
-		array1[11] = 1;
+		array1[1] = 1;
 		array1[2] = 2;
 
 		//선언과 동시에 초기화
