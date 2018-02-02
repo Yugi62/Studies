@@ -37,4 +37,6 @@ int main()
 	delete p2;
 
 	delete[] p3; //delete로 제거 시 배열의 첫번째 위치만 해제되기 때문에 반드시 delete[]를 사용해야 한다
+
+	return 0;
 }
