@@ -48,16 +48,20 @@ public:					//접근 지시자 선언 (다른 접근 지시자 선언까지 'public')
 
 void Point::Display2()		//외부에서 생성자 정의
 {
-	cout << x << endl;
-	cout << y << endl;
+	cout << x << endl;		//내부에서 'private'인 x 접근 
+	cout << y << endl;		//내부에서 'private'인 y 접근
 }
 
 int main()
 {
 	Point p1;		//p1 인스턴스 선언
 
-	p1.Display1();		//'.'으로 Display1() 멤버 함수 접근
-	p1.Display2();		//'.'으로 Display2() 멤버 함수 접근
+	//p1.x = 10;	외부에서 'private'인 x 접근 불가
+	//p1.y = 20;	외부에서 'private'인 y 접근 불가
+
+
+	p1.Display1();		//외부에서 '.'으로 'public' Display1() 멤버 함수 접근
+	p1.Display2();		//외부에서 '.'으로 'public' Display2() 멤버 함수 접근
 
 	Point *p2 = new Point; //p2 인스턴스 동적 할당
 
