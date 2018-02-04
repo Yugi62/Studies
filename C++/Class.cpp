@@ -8,7 +8,7 @@ using namespace std;
 
 /*
 클래스		: 객체를 프로그램으로 표현할 수 있도록 데이터(필드)와 처리(메서드)를 모아 놓은 설계도
-인스턴스	: 클래스를 통해 만들어진 실체
+인스턴스		: 클래스를 통해 만들어진 실체
 
 접근 지시자	: 클래스에 속한 멤버들을 대상으로 접근에 제한을 들 수 있는 키워드
  private	: 외부에서 접근 불가
@@ -27,7 +27,7 @@ using namespace std;
 */
 
 
-class Point //Point 클래스 선언
+class Point				//Point 클래스 선언
 {
 private:				//접근 지시자 선언 (다른 접근 지시자 선언까지 'private')
 
@@ -37,16 +37,16 @@ private:				//접근 지시자 선언 (다른 접근 지시자 선언까지 'private')
 
 public:					//접근 지시자 선언 (다른 접근 지시자 선언까지 'public')
 
-	void Display1()		//멤버 함수 선언 및 정의(inline)
+	void Display1()			//멤버 함수 선언 및 정의(inline)
 	{
 		cout << x << endl;
 		cout << y << endl;
 	}
 
-	void Display2();	//멤버 함수 선언
+	void Display2();		//멤버 함수 선언
 };
 
-void Point::Display2()	//외부에서 생성자 정의
+void Point::Display2()		//외부에서 생성자 정의
 {
 	cout << x << endl;
 	cout << y << endl;
@@ -54,7 +54,7 @@ void Point::Display2()	//외부에서 생성자 정의
 
 int main()
 {
-	Point p1;			//p1 인스턴스 선언
+	Point p1;		//p1 인스턴스 선언
 
 	p1.Display1();		//'.'으로 Display1() 멤버 함수 접근
 	p1.Display2();		//'.'으로 Display2() 멤버 함수 접근
