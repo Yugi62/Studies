@@ -11,7 +11,6 @@ using namespace std;
 
 유의사항)
 1. 선언과 동시에 반드시 초기화
-2. 매개변수인 레퍼런스는 삽입된 기존의 변수와 동일하다
 */
 
 void Swap(int &x, int &y)	//Call by reference
