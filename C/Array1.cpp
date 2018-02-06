@@ -55,5 +55,8 @@ int main()
 		int array6[2][2] = { 1,2,3,4 };
 		int array7[2][2] = { {1,2},{3,4} };
 
+		//모두 0으로 초기화
+		int array8[2][2] = { 0, };
+
 	return 0;
 }
