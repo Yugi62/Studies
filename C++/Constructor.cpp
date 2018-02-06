@@ -37,7 +37,6 @@ using namespace std;
  -malloc 함수로는 실행이 되지 않는다
 
  -생성자 또한 '오버로딩'을 하는 것이 가능하다
- -어떠한 생성자도 선언하지 않을 시 비어있는 기본 생성자가 만들어져 실행된다
 */
 
 class Constructor
