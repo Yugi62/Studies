@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//Array,Pointer
+//Array2
 ////////////////////
 
 /*
