@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include <iostream>
 
-//Array
+//Array1
 ////////////////////
 
 /*
