@@ -65,26 +65,29 @@ Constructor::Constructor(Constructor &Other)
 
 void main()
 {
-	//Constructor a(); = 함수
-	//위 코드는 객체를 선언하는 것이 아닌 함수를 선언하는 것이므로 주의
+  //Constructor a(); = 함수
+  //위 코드는 객체를 선언하는 것이 아닌 함수를 선언하는 것이므로 주의
 	
-
-	Constructor a;  //기본 생성자
+    Constructor a;  //기본 생성자
 
   //Constructor a = Constructor();
   //복사 생성자 인해 위 Constructor()를 잘못 인식해 사용하려면 복사생성자를 지워야한다
 
-	Constructor b(10);  //인자 생성자
-	Constructor c = a;  //복사 생성자
 
-	Constructor *d = new Constructor;     //기본 생성자
-	Constructor *e = new Constructor();   //기본 생성자
-	Constructor *f = new Constructor(10); //인자 생성자
+    Constructor b(10);  //인자 생성자
+    Constructor c = a;  //복사 생성자
 
-	Constructor *g = f;  //복사 생성자가 실행되지 않는다
 
-	Constructor h[2];                //객체 배열 선언
-	Constructor i[2] = { {1},{2} };  //객체 배열 선언 및 초기화
+
+
+    Constructor *d = new Constructor;     //기본 생성자
+    Constructor *e = new Constructor();   //기본 생성자
+    Constructor *f = new Constructor(10); //인자 생성자
+
+    Constructor *g = f;  //복사 생성자가 실행되지 않는다
+
+    Constructor h[2];                //객체 배열 선언
+    Constructor i[2] = { {1},{2} };  //객체 배열 선언 및 초기화
 
   //Constructor j[2] = { Constructor(1), Constructor(2)};
   //복사 생성자 인해 위 Constructor()를 잘못 인식해 사용하려면 복사생성자를 지워야한다
