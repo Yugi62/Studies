@@ -77,6 +77,32 @@ C& C::operator=(C& Other)
 	return *this;
 }
 
+//멤버 증감 연산자 오버로딩
+//후위와 전위를 구분하기 위해 인자에 더미를 넣어야 한다
+
+class D
+{
+private:
+	int number;
+
+public:
+	D(int _number) : number(_number) {}
+
+	const D& operator ++ ();
+	const D& operator ++ (int);
+};
+
+const D& D::operator ++ ()           //전위
+{
+	++number;
+	return *this;
+}
+const D& D::operator ++ (int temp)   //후위 (구분을 위해 더미 매개변수를 넣는다)
+{
+	number++;
+	return *this;
+}
+
 int main()
 {
 	A a1(20);
@@ -93,4 +119,8 @@ int main()
 	C c2(8);
 
 	c1 = c2;        // = c1.operator = (c2);
+
+	D d(0);
+	d++;            // operator ++ (int x) 실행
+	++d;            // operator ++ () 실행
 }
