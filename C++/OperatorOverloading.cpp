@@ -92,5 +92,5 @@ int main()
 	C c1(5);
 	C c2(8);
 
-	c1 = c2;		// = c1.operator = (c2);
+	c1 = c2;        // = c1.operator = (c2);
 }
